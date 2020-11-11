@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\content",
+    "\\src",
+    "\\src\\components",
+    "\\src\\images",
+    "\\src\\pages",
+    "\\src\\templates",
+    "\\static",
+    "\\static\\admin",
+    "\\static\\img"
+  ],
+  "SelectedNode": "\\static\\admin\\config.yml",
+  "PreviewInSolutionExplorer": false
+}
