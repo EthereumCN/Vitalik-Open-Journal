@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "react-seo-component"
 import "../components/layout.css"
-import { Flex, Box, Badge, Image, Divider, Heading } from "@chakra-ui/core"
+import { Flex, Box, Image, Divider, Heading } from "@chakra-ui/core"
 import { useStaticQuery, graphql, Link } from "gatsby"
 const IndexPage = () => {
     const data = useStaticQuery(graphql`
@@ -23,7 +23,7 @@ const IndexPage = () => {
             path
             title
             author
-            date(formatString: "YYYY-MM-DD")
+            date(formatString: "YYYY/MM/DD")
             description
             tags
             authorimg {
@@ -76,14 +76,12 @@ const IndexPage = () => {
                                 itemType="http://schema.org/Article"
                             >
                                 <Flex id="list" align="center" flexDirection="row">
-                                    <Box w="15rem" textAlign="center" >
+                                    <Box id="left" w="15rem" textAlign="center" >
                                         
                                         <small>{post.frontmatter.date}</small><br/>
-                                        <Badge VariantColor="rgba(0, 0, 0, 0.4)" variant="solid">
-                                            {post.frontmatter.tags}
-                                        </Badge>
+                                        
                                     </Box>
-                                    <Box w="40rem" h="auto" pt={10} pb={10} >
+                                    <Box  id="center" w="40rem" h="auto" pt={10} pb={10} >
                                         <Link to={post.frontmatter.path}>
                                             <Heading as="h2"  color="#1E2640">{post.frontmatter.title}</Heading>
                                         </Link>
@@ -95,7 +93,7 @@ const IndexPage = () => {
                                     />
 
                                     </Box>
-                                    <Box w="18rem" pl="0.2rem" >
+                                    <Box id="right" w="18rem" pl="0.2rem" >
                                         <Image src={post.frontmatter.img.childImageSharp.fluid.src} alt={post.frontmatter.title} maxW="17rem"></Image>
                                     </Box>
                                 </Flex>
