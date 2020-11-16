@@ -5,20 +5,21 @@ const Footer = () => {
     
   return (
     <Flex
-      backgroundColor="#274472"
       justifyContent="center"
       height={110}
       flexDirection="column"
-      alignItems="center"
+      alignItems="right"
+      textAlign="right"
     >
       <Text
-        color="white"
+        color="#0292B7"
         fontWeight="bold"
         fontSize="16px"
-        fontFamily="NotoSansSC-Bold"
-        letterSpacing="5px"
+        fontFamily="huaWen"
+        letterSpacing="2px"
       >
-        VCN中文站
+              Vitalik Open Journal <br />
+              网站遵循WTFPL协议
       </Text>
      
     </Flex>

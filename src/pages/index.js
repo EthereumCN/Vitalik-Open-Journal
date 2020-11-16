@@ -75,7 +75,7 @@ const IndexPage = () => {
                                 itemScope
                                 itemType="http://schema.org/Article"
                             >
-                                <Flex id="list" align="center" flexDirection="row">
+                                <Flex id="list" align="center" flexDirection="row" >
                                     <Box id="left" w="15rem" textAlign="center" >
                                         
                                         <small>{post.frontmatter.date}</small><br/>
@@ -93,8 +93,8 @@ const IndexPage = () => {
                                     />
 
                                     </Box>
-                                    <Box id="right" w="18rem" pl="0.2rem" >
-                                        <Image src={post.frontmatter.img.childImageSharp.fluid.src} alt={post.frontmatter.title} maxW="17rem"></Image>
+                                    <Box id="right" pl="0.2rem" >
+                                        <Image src={post.frontmatter.img.childImageSharp.fluid.src} alt={post.frontmatter.title} maxW="100%"></Image>
                                     </Box>
                                 </Flex>
                             </article>

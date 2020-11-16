@@ -108,7 +108,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                       <Text
                       fontSize="1rem"
                       color="#a8a9a6"
-                      fontWeight={12}
+                      fontWeight="bold"
           
                   >    作者：{post.frontmatter.author}
                        
@@ -118,7 +118,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                        <Text
                       fontSize="1rem"
                       color="#a8a9a6"
-                      fontWeight={12}
+                      fontWeight="bold"
                         
 
                           >
@@ -137,7 +137,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
               </Box>
               <Box w="20%">
                   <Menu closeOnSelect={false} placement="left" >
-                      <MenuButton as={Button} variantColor="blue" size="sm" left="80%">
+                      <MenuButton as={Button} variantColor="blue" size="sm" left="75%">
                           <FontAwesomeIcon  icon={faBars} size="1x" />
                       </MenuButton>
                       <MenuList maxWidth="300px">
