@@ -83,16 +83,17 @@ const BlogPostTemplate = ({ data, pageContext }) => {
               publishedDate={post.frontmatter.date}
               modifiedDate={post.frontmatter.date}
           />
-          <Flex align="flex-start" flexDirection="row" pt={3}>
+      
+          <Flex  align="flex-start" flexDirection="row" pt={3}>
               
-              <Box w="20%">
+              <Box w="20%" display={["none","inline", "inline"]}>
                   <Link to="/">
                       <IndexIcon boxSize={35} marginLeft={25} />
                   </Link>
               </Box>
               
               <Box
-                  w="60%"
+                  w={["100%", "60%", "60%"]}
 
       >
                 <Heading
@@ -105,20 +106,20 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                 <Divider pt={15} borderColor="#BCA88E" />
           
                  
-                      <Text
+                  <Text
                       fontSize="1rem"
                       color="#a8a9a6"
-                      fontWeight="bold"
+                      fontWeight={["light", "bold", "bold"]}
           
                   >    作者：{post.frontmatter.author}
                        
                           
                       </Text>
                     
-                       <Text
+                  <Text
                       fontSize="1rem"
                       color="#a8a9a6"
-                      fontWeight="bold"
+                      fontWeight={["light", "bold", "bold"]}
                         
 
                           >
@@ -129,7 +130,15 @@ const BlogPostTemplate = ({ data, pageContext }) => {
               
           
                   <Divider borderColor="#BCA88E" />
+                  <Link  to="/">
+                      <Text
 
+                          textAlign="right"
+                          fontSize="14px"
+                          marginBottom="20px"
+                          color="#5885AF"
+                          display={["block", "none", "none"]}>返回查看所有文章</Text>
+                  </Link>
                   <Box
                      dangerouslySetInnerHTML={{ __html: post.html }}>
 
@@ -192,8 +201,11 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                   </ScrollToTop>                     
                  
               </Box>
-         
+
+              
           </Flex>
+
+         
           <Flex
               flexDirection="row"
           >
@@ -220,6 +232,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                   )}
               </Box>
           </Flex>
+         
           
               
     </>
