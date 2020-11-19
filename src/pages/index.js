@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "react-seo-component"
 import "../components/layout.css"
-import { Flex, Box, Image, Divider, Heading } from "@chakra-ui/core"
+import { Flex, Box, Image, Divider, Heading,Text } from "@chakra-ui/core"
 import { useStaticQuery, graphql, Link } from "gatsby"
 const IndexPage = () => {
     const data = useStaticQuery(graphql`
@@ -76,16 +76,21 @@ const IndexPage = () => {
                                 itemType="http://schema.org/Article"
                             >
                                 <Flex id="list" align="center" flexDirection="row" >
-                                    <Box id="left" w="15rem" textAlign="center" >
+                                    <Box display={["none", "inline", "inline"]} id="left" w="15rem" textAlign="center" >
                                         
-                                        <small>{post.frontmatter.date}</small><br/>
+                                        <small >{post.frontmatter.date}</small><br/>
                                         
                                     </Box>
                                     <Box  id="center" w="40rem" h="auto" pt={10} pb={10} >
                                         <Link to={post.frontmatter.path}>
                                             <Heading as="h2"  color="#1E2640">{post.frontmatter.title}</Heading>
                                         </Link>
-                                        <small>{post.frontmatter.author}</small>
+                                        
+                                        <small >{post.frontmatter.author}</small>
+                                        <box>
+                                            <Text ml="1.5rem" display={["inline", "none", "none"]} fontSize="0.5rem"  color="#05445E" >{post.frontmatter.date}</Text>
+                                        </box>
+                                      
                                         <p dangerouslySetInnerHTML={{
                                             __html: post.frontmatter.description || post.excerpt,
                                         }}
