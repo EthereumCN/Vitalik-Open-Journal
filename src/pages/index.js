@@ -76,21 +76,20 @@ const IndexPage = () => {
                                 itemType="http://schema.org/Article"
                             >
                                 <Flex id="list" align="center" flexDirection="row" >
-                                    <Box display={["none", "inline", "inline"]} id="left" w="15rem" textAlign="center" >
+                                    <Box display={["none", "none", "none","inline"]} id="left" w="15rem" textAlign="center" >
                                         
-                                        <small >{post.frontmatter.date}</small><br/>
+                                        <small >{post.frontmatter.date}</small>
                                         
                                     </Box>
                                     <Box  id="center" w="40rem" h="auto" pt={10} pb={10} >
                                         <Link to={post.frontmatter.path}>
                                             <Heading as="h2"  color="#1E2640">{post.frontmatter.title}</Heading>
                                         </Link>
-                                        
-                                        <small >{post.frontmatter.author}</small>
+
+                                        <small fontSize="0.8rem" color="#05445E">{post.frontmatter.author}</small>
                                         <box>
-                                            <Text ml="1.5rem" display={["inline", "none", "none"]} fontSize="0.5rem"  color="#05445E" >{post.frontmatter.date}</Text>
+                                            <Text ml="1.5rem" display={["inline", "inline","inline", "none"]} fontSize="0.8rem"  color="#05445E" >{post.frontmatter.date}</Text>
                                         </box>
-                                      
                                         <p dangerouslySetInnerHTML={{
                                             __html: post.frontmatter.description || post.excerpt,
                                         }}
