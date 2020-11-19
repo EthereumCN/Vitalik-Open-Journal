@@ -20,6 +20,7 @@ import { BackTop } from "antd"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { motion } from "framer-motion"
+import { Frame } from "framer"
 import { createIcon } from "@chakra-ui/icons"
 import ScrollToTop from "react-scroll-up"
 import  "../components/layout.css"
@@ -65,7 +66,11 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         ),
     }
        
-)
+    )
+    const variants = {
+        variantA: { scale: 0.75, rotate: 0 },
+        variantB: { scale: 1, rotate: 360}
+    };
   return(
     <>
           <SEO
@@ -86,14 +91,16 @@ const BlogPostTemplate = ({ data, pageContext }) => {
       
           <Flex  align="flex-start" flexDirection="row" pt={3}>
               
-              <Box w="20%" display={["none","inline", "inline"]}>
-                  <Link to="/">
-                      <IndexIcon boxSize={35} marginLeft={25} />
-                  </Link>
+              <Box  w="20%" display={["none", "none", "inline", "inline"]}>
+                  
+                      <Link to="/">
+                      <IndexIcon id="index" boxSize={35} marginLeft={25} color="white"/>
+                      </Link>
+                  
               </Box>
               
               <Box
-                  w={["100%", "60%", "60%"]}
+                  w={["100%", "100%","60%", "60%"]}
 
       >
                 <Heading
@@ -108,8 +115,8 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                  
                   <Text
                       fontSize="1rem"
-                      color="#a8a9a6"
-                      fontWeight={["light", "bold", "bold"]}
+                      color="#746C70"
+                      fontWeight={["light","light", "bold", "bold"]}
           
                   >    作者：{post.frontmatter.author}
                        
@@ -118,8 +125,8 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                     
                   <Text
                       fontSize="1rem"
-                      color="#a8a9a6"
-                      fontWeight={["light", "bold", "bold"]}
+                      color="#746C70"
+                      fontWeight={["light", "light","bold", "bold"]}
                         
 
                           >
@@ -137,7 +144,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                           fontSize="14px"
                           marginBottom="20px"
                           color="#5885AF"
-                          display={["block", "none", "none"]}>返回查看所有文章</Text>
+                          display={["block","block", "none", "none"]}>返回查看所有文章</Text>
                   </Link>
                   <Box
                      dangerouslySetInnerHTML={{ __html: post.html }}>
@@ -185,7 +192,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                           overflowY="auto"
                           maxH="70vh"
                       >
-                          <Text fontSize="20px" color="#8C756A" fontWeight="bold" display="inline-block">
+                          <Text fontSize="20px" color="#4E4F50" fontWeight="bold" display="inline-block">
                               目录
                           </Text>
                           <Box 

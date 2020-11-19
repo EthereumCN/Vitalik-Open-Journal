@@ -88,7 +88,7 @@ const IndexPage = () => {
 
                                         <small fontSize="0.8rem" color="#05445E">{post.frontmatter.author}</small>
                                         <box>
-                                            <Text ml="1.5rem" display={["inline", "inline","inline", "none"]} fontSize="0.8rem"  color="#05445E" >{post.frontmatter.date}</Text>
+                                            <Text ml="1.5rem" display={["inline", "inline", "inline", "none"]} fontSize="0.8rem" color="#4E4F50" >{post.frontmatter.date}</Text>
                                         </box>
                                         <p dangerouslySetInnerHTML={{
                                             __html: post.frontmatter.description || post.excerpt,
