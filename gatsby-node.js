@@ -19,18 +19,12 @@ exports.createPages = async ({ graphql, actions }) => {
               }
               frontmatter {
                 title
-                img {
-                  childImageSharp {
-                    fluid {
-                      src
-                    }
-                  }
-                }
-              }
+                img
             }
           }
         }
       }
+    }
     `
   )
 

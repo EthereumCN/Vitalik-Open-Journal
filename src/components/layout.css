@@ -1,7 +1,8 @@
 @media screen and (min-width:1280px){
     #left{width:25rem}
-    #center{width:55rem}
+    #center{width:40rem}
     #right{width:26rem}
+    #img{width:15rem}
 
 }
 
@@ -11,8 +12,9 @@
     }
 
     #center {
-        width: 40rem
+        width: 30rem
     }
+    #img{width:10rem}
 
     #right {
         width: 18rem
@@ -83,8 +85,9 @@
     }
 
     #center {
-        width: 32rem
+        width: 19rem
     }
+    #img{width:10rem; height:10rem}
 
     #right {
         width: 12rem

@@ -3,8 +3,8 @@ path: blog1021
 title: VITALIK：GITCOIN GRANTS第七轮回顾
 date: 2020-10-21T02:59:27.380Z
 featuredpost: true
-img: gitcoin7.png
-authorimg: gitcoin7.png
+img: https://i.ibb.co/7WXwCBq/gitcoin7.png
+authorimg: https://i.ibb.co/7WXwCBq/gitcoin7.png
 description: DeFi项目反哺生态，总计逾73万美元分配到857个项目；首次引入ZK Rollup降低手续费
 tags: DeFi
 author: Vitalik Buterin

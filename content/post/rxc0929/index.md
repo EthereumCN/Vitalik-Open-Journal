@@ -3,8 +3,8 @@ path: rxc0929
 title: 激进Ｘ变革：当VITALIK遇上WEYL
 date: 2018-09-29T07:14:00.000Z
 featuredpost: true
-img: designphilosophy.png
-authorimg: designphilosophy.png
+img: https://i.ibb.co/RD6hg1r/designphilosophy.png
+authorimg: https://i.ibb.co/RD6hg1r/designphilosophy.png
 description: 激进Ｘ变革：当VITALIK遇上WEYL
 tags: conversation
 author: Vitalik Buterin, Glen Weyl

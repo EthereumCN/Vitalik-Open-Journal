@@ -3,8 +3,8 @@ path: blog0803
 title: VITALIK：GITCOIN GRANTS第六轮回顾
 date: 2020-08-03T02:59:27.380Z
 featuredpost: true
-img: gitcoin6.jpg
-authorimg: gitcoin6.jpg
+img: https://i.ibb.co/fkbxFhY/gitcoin6.jpg
+authorimg: https://i.ibb.co/fkbxFhY/gitcoin6.jpg
 description: V神对Gitcoin Grants 第六轮的总结回顾。Vitalik指出，本轮中一大出乎意料的赢家是EIP 1559 社区基金。EIP
   1559 是一个重要且意义深远的费用市场改革提案。
 tags: Gitcoin

@@ -3,8 +3,8 @@ path: ETH1023
 title: VITALIK：ETH2分片链简化提案
 date: 2019-10-23T06:41:00.000Z
 featuredpost: true
-img: 图片2.png
-authorimg: 图片2.png
+img: https://i.ibb.co/D9tj7HZ/2.png
+authorimg: https://i.ibb.co/D9tj7HZ/2.png
 description: 最新分片简化方案：分片数量从1024降为64
 tags: ETH2
 author: Vitalik Buterin
