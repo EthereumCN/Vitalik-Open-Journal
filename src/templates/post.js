@@ -20,7 +20,7 @@ import { BackTop } from "antd"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { motion } from "framer-motion"
-import { Frame } from "framer"
+
 import { createIcon } from "@chakra-ui/icons"
 import ScrollToTop from "react-scroll-up"
 import  "../components/layout.css"
