@@ -26,21 +26,8 @@ const IndexPage = () => {
             date(formatString: "YYYY/MM/DD")
             description
             tags
-            authorimg {
-              childImageSharp {
-                fixed(width: 32, height: 32) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-            img {
-              relativePath
-              childImageSharp {
-                fluid(maxWidth: 1000, maxHeight: 580) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
+            authorimg
+            img
         }
           fields {
             slug
@@ -59,7 +46,7 @@ const IndexPage = () => {
                 titleSeparator={`-`}
                 description="博客索引"
                 image="https://i.ibb.co/st7dcTX/20201106230359.png"
-                pathname="https://vitalik.netlify.app/"
+                pathname="https://vitalik.cn/"
                 siteLanguage="zh"
                 siteLocale="zh_CN"
                 twitterUsername=""
@@ -76,30 +63,39 @@ const IndexPage = () => {
                                 itemType="http://schema.org/Article"
                             >
                                 <Flex id="list" align="center" flexDirection="row" >
-                                    <Box display={["none", "none", "none","inline"]} id="left" w="15rem" textAlign="center" >
+                                    <Box display={["none", "none", "none","inline"]} id="left"  textAlign="center" >
                                         
-                                        <small >{post.frontmatter.date}</small>
+                                        <small ></small>
                                         
                                     </Box>
-                                    <Box  id="center" w="40rem" h="auto" pt={10} pb={10} >
+                                    <Flex align="center"  flexDirection="row">
+                                    <Box id="center" h="auto" pt={10} pb={10} >
                                         <Link to={post.frontmatter.path}>
-                                            <Heading as="h2"  color="#1E2640">{post.frontmatter.title}</Heading>
+                                                <Heading  as="h2"  color="#1E2640">{post.frontmatter.title}</Heading>
                                         </Link>
-
-                                        <small fontSize="0.8rem" color="#05445E">{post.frontmatter.author}</small>
-                                        <box>
-                                            <Text ml="1.5rem" display={["inline", "inline", "inline", "none"]} fontSize="0.8rem" color="#4E4F50" >{post.frontmatter.date}</Text>
-                                        </box>
+                                        <Box  w="100%"mb={3}>
+                                                <small fontSize="1rem" color="#05445E">{post.frontmatter.author}</small>
+                                                <Text ml="1.5rem" display={["inline", "inline", "inline", "none"]} fontSize="0.8rem" color="#4E4F50" >{post.frontmatter.date}</Text>
+                                        </Box>
+                                       
+                                           
+                                        
                                         <p dangerouslySetInnerHTML={{
                                             __html: post.frontmatter.description || post.excerpt,
                                         }}
                                         itemProp="description"
-                                    />
+                                            />
+                                    </Box>
 
+                                    <Box  pl="0.2rem"  >
+                                            <Image id="img" src={post.frontmatter.img} alt={post.frontmatter.title} ></Image>
                                     </Box>
-                                    <Box id="right" pl="0.2rem" >
-                                        <Image src={post.frontmatter.img.childImageSharp.fluid.src} alt={post.frontmatter.title} maxW="100%"></Image>
-                                    </Box>
+                                   
+                                    </Flex>
+
+                                    
+                                    <Box id="right" ></Box>
+                                    
                                 </Flex>
                             </article>
                             <Divider borderColor="#C3E0E5" />

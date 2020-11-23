@@ -3,8 +3,8 @@ path: ethereum0513
 title: VITALIK：以太坊2.0年均ETH发行量将控制在10万~200万
 date: 2020-05-13T06:55:00.000Z
 featuredpost: true
-img: designphilosophy.png
-authorimg: designphilosophy.png
+img: https://i.ibb.co/RD6hg1r/designphilosophy.png
+authorimg: https://i.ibb.co/RD6hg1r/designphilosophy.png
 description: 以太坊创始人Vitalik Buterin在POV Crypto Podcast的采访中讨论了EIP-1559和以太坊2.0的货币政策。
 tags: 以太坊2.0
 author: Vitalik Buterin

@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "gatsby"
 import { Flex, Text} from "@chakra-ui/core"
 
 const Footer = () => {
@@ -10,17 +11,19 @@ const Footer = () => {
       flexDirection="column"
       alignItems="right"
       textAlign="right"
-    >
-      <Text
-        color="#0292B7"
-        fontWeight="bold"
-        fontSize="16px"
-        fontFamily="huaWen"
-        letterSpacing="2px"
       >
-              Vitalik Open Journal <br />
-              网站遵循WTFPL协议
-      </Text>
+      <Link to="http://www.wtfpl.net/ ">
+        <Text
+            color="#B9B7BD"
+            fontWeight="bold"
+            fontSize="16px"
+            fontFamily="huaWen"
+            letterSpacing="2px"
+            textAlign="center"
+        >
+              @2020 WTFPL 
+        </Text>
+      </Link>
      
     </Flex>
   )

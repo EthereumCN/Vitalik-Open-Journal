@@ -3,8 +3,8 @@ path: blog0827
 title: VITALIK：区块链“验证”的哲学
 date: 2020-08-27T03:44:54.868Z
 featuredpost: true
-img: verify.png
-authorimg: verify.png
+img: https://i.ibb.co/zGsFGyn/verify.png
+authorimg: https://i.ibb.co/zGsFGyn/verify.png
 description: 你是区块链的定义派还是协和派？V神为你详析协和派的底层逻辑。
 tags: 区块链
 author: Vitalik Buterin

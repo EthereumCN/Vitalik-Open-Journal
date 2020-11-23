@@ -3,8 +3,8 @@ path: defi0915
 title: Vitalik观点：隐私、DeFi、ETH 2.0
 date: 2019-09-15T07:06:00.000Z
 featuredpost: true
-img: img_1548-gid_7.jpg
-authorimg: img_1548-gid_7.jpg
+img: https://i.ibb.co/fHpqW3h/img-1548-gid-7.jpg
+authorimg: https://i.ibb.co/fHpqW3h/img-1548-gid-7.jpg
 description: 昨日，以太坊联合创始人 Vitalik Buterin 在特拉维夫 Ethereal 峰会问答环节中谈论到以太坊大生态的发展状况。
 tags: Vitalik View
 author: Tim Copeland

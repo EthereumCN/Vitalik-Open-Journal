@@ -78,7 +78,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
               titleTemplate={`{ post.frontmatter.title }` - `{ site.siteMetadata.title }`}
               titleSeparator={`-`}
               description={post.frontmatter.description}
-              image={post.frontmatter.img.childImageSharp.fixed.src}
+              image={post.frontmatter.img}
               pathname={post.frontmatter.path}
               siteLanguage="zh"
               siteLocale="zh_CN"
@@ -260,22 +260,10 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         author
-        authorimg {
-          childImageSharp {
-            fixed {
-              src
-            }
-          }
-        }
+        authorimg
         date(formatString: "YYYY/MM/DD")
         description
-        img {
-          childImageSharp {
-            fixed {
-              src
-            }
-          }
-        }
+        img
         featuredpost
         tags
         title

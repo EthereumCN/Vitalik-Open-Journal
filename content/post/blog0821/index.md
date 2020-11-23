@@ -3,8 +3,8 @@ path: blog0821
 title: 一种PROOF OF STAKE设计哲学
 date: 2020-08-21T03:44:54.868Z
 featuredpost: true
-img: designphilosophy.png
-authorimg: designphilosophy.png
+img: https://i.ibb.co/RD6hg1r/designphilosophy.png
+authorimg: https://i.ibb.co/RD6hg1r/designphilosophy.png
 description: 来重温一下V神16年写的关于PoS的文章:)
 tags: PoS
 author: Vitalik Buterin
